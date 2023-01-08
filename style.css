@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;700&display=swap');
+
+body{
+    font-family: 'Source Sans Pro', sans-serif;
+    color: 	#2F4F4F;
+    background-color: #E6E6FA;
+    display: flex;
+    justify-content: center;
+}
+main{
+    width: 30vw;
+    height: 50vh;
+    margin: 100px;
+    border: 8px solid #696969;
+    background-color: #B0E0E6;
+}
+
+.texto{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.texto span{
+    width: 75%;
+}
+.add-notas{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    width: 500px;
+    height: 25px;
+    margin: 0px auto;    
+}
+.add-notas input{
+    width: 250px;
+    height: 22px;
+    border-radius: 2px;
+    border: 2px solid #2F4F4F;    
+    background-color: #E6E6FA;
+    margin-top: 5px;
+}
+.add-notas button{
+    width: 125px;
+    height: 26px;
+    color: #E6E6FA;
+    background-color: #2F4F4F ;
+    border: 3px solid #696969;
+    margin-left: 3px;
+    margin-top: 6px;    
+    cursor: pointer;
+}
+.itens{
+    width: 350px;
+    margin: 15px auto;   
+}
+.item span{
+    color: #696969;
+    margin-left: 15px;
+    cursor: pointer;
+}
+
+
