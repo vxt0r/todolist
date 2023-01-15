@@ -1,17 +1,20 @@
 @import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;700&display=swap');
 
 body{
+    width: 100vw;
+    height: 100vh;
     font-family: 'Source Sans Pro', sans-serif;
     color: 	#2F4F4F;
     background-color: #E6E6FA;
     display: flex;
     justify-content: center;
+    align-items: center;
 }
 main{
     width: 30vw;
     height: 50vh;
-    margin: 100px;
-    border: 8px solid #696969;
+    margin-bottom: 10em;
+    border: 0.5em solid #696969;
     background-color: #B0E0E6;
 }
 
@@ -21,42 +24,77 @@ main{
     align-items: center;
 }
 .texto span{
-    width: 75%;
+    width: 85%;
 }
 .add-notas{
     display: flex;
     justify-content: center;
+    gap: 0.5em;
     align-items: flex-start;
-    width: 500px;
-    height: 25px;
-    margin: 0px auto;    
+    width: 90%;
+    height: 3em;
+    padding-top: 2px;
+    margin: 0px auto;     
 }
 .add-notas input{
-    width: 250px;
-    height: 22px;
+    width: 60%;
+    height: 2em;
     border-radius: 2px;
     border: 2px solid #2F4F4F;    
     background-color: #E6E6FA;
-    margin-top: 5px;
+    margin-top: 0.5em;
 }
 .add-notas button{
-    width: 125px;
-    height: 26px;
+    width: 30%;
+    height: 2.3em;
     color: #E6E6FA;
     background-color: #2F4F4F ;
     border: 3px solid #696969;
-    margin-left: 3px;
-    margin-top: 6px;    
+    margin-top: 0.5em; 
     cursor: pointer;
 }
 .itens{
-    width: 350px;
-    margin: 15px auto;   
+    width: 85%;
+    margin: 1em auto;   
 }
-.item span{
+.item{
+    display: flex;
+    align-items: flex-start;
+}
+.texto-span{
+    width: 65%;
+}
+.editar, .remover{
+    width: 4em;
+    height: 1em;
     color: #696969;
-    margin-left: 15px;
     cursor: pointer;
+    margin: 5px; 
+    line-height: 0.8em;
 }
 
+@media(max-width:1280px){  
+    main{
+        width: 40vw;
+    }
+}
+
+@media(max-width:912px){  
+    main{
+        width: 60vw;
+    }
+}
+
+@media(max-width:600px){
+    main{
+       width: 70vw;
+   }
+} 
+
+@media(max-width:300px){
+    main{
+        width: 90vw;
+    }
+   
+} 
 

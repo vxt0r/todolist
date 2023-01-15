@@ -3,38 +3,47 @@ const btn = document.querySelector('.btn-add')
 const secaoItens = document.querySelector('.itens')
 
 
-const criarSpan = (acao)=>{
+const criarSpanAcao = (acao)=>{
     const span = document.createElement('span')
     span.innerText = acao[0].toUpperCase() + acao.substring(1)
     span.classList.add(acao)
     return span
 }
 
-const adicionarSpansItem = (item)=>{
-    const editar = criarSpan('editar')
-    const remover = criarSpan('remover')
-    item.appendChild(editar)
-    item.appendChild(remover)
+const criarSpanTexto = ()=>{
+    const spanTexto = document.createElement('span')
+    spanTexto.classList.add('texto-span')
+    spanTexto.innerText = input.value
+    return spanTexto
+}
+
+const adicionarSpansItem = (div)=>{
+    const spanTexto = criarSpanTexto()
+    const editar = criarSpanAcao('editar')
+    const remover = criarSpanAcao('remover')
+    div.appendChild(spanTexto)
+    div.appendChild(editar)
+    div.appendChild(remover)
 } 
 
 const criarItem = ()=>{
-    const p = document.createElement('p')
-    p.classList.add('item')
-    p.innerText = input.value
-    adicionarSpansItem(p)
-    secaoItens.appendChild(p)
+    const div = document.createElement('div')
+    div.classList.add('item')
+    adicionarSpansItem(div)
+    secaoItens.appendChild(div)
 }
 
 const editarItem = (e)=>{
-    const p = e.target.parentNode
+    const spanTexto = e.target.parentNode.children[0]
     const texto = prompt("Edite a nota")
-    p.innerText = texto
-    adicionarSpansItem(p)
+    if(texto){
+        spanTexto.innerText = texto
+    }
 }
 
 const removerItem = (e)=>{
-    const p = e.target.parentNode
-    p.remove()
+    const div = e.target.parentNode
+    div.remove()
 }
 
 const executarAcaoSpan = (e)=>{

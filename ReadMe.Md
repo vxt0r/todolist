@@ -1,0 +1,1 @@
+implementar o uso de local storage pra salvar as informacoes
