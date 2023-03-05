@@ -1,1 +1,2 @@
-implementar o uso de local storage pra salvar as informacoes
+#todo list
+-Permite adicionar notas, editá-las ou remov 
