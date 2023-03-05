@@ -1,2 +1,2 @@
 # todo list
-- Permite adicionar notas, editá-las ou remov 
+- Permite adicionar notas, editá-las ou remov
